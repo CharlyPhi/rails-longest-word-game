@@ -1,0 +1,9 @@
+
+<%= @letters %>
+
+<form action="/score" method='POST' data-turbo="false">
+<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <label for="word">Long word you guess ?</label>
+  <input type="text" name="word">
+  <input type="submit" value="CLICK ME YOU TWAT !">
+</form>
